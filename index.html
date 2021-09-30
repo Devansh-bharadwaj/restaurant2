@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document restaurant website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .container1 {
+            background-image: url("https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+            width: 100%;
+            height: 600px;
+            background-attachment: scroll;
+            background-size: cover;
+        }
+        .ul1 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color:black;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .list {
+            float: left;
+        }
+        .list a {
+            display: block;
+            padding: 18px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .list a:hover {
+            background-color: green;
+            border-radius: 5px;
+        }
+        .heading {
+            margin: auto;
+            left: 520x;
+            margin-top: 200px;
+            width: 250px;
+            height: 57px;
+            padding: 10px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            font-family: verdana;
+            border-radius: 8px;
+        }
+        @media screen and (min-width: 600px) {
+            .cont {
+               margin: 50px;
+            }
+            .heading {
+                margin-top: 300px;
+            }
+            .title {
+                font-size: 51px;
+            }
+            .single-menu h4 span {
+           float: right;
+           color: #ff7720;
+           font-style: italic;
+            }
+        }
+        .heading a {
+            color: black;
+            text-decoration: none;   
+        }
+        .heading:hover {
+            background-color: green;
+            box-shadow: 10px 8px 8px rgb(29, 43, 2);
+            width: 260px;
+            height: 70px;
+            font-size: 32px;
+            transition: .5s;
+        }
+        .title {
+            font-family: 'Bonheur Royale', cursive;
+            font-size: 70px;
+            color:ivory;
+            text-align: center;
+        }
+        .wrapper {
+            margin: auto;
+            left: 520x;
+            height: 57px;
+            text-align: center;
+            font-size: 30px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .heading2 {
+            margin: auto;
+            left: 520x;
+            top: 10px;
+            width: 250px;
+            height: 57px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-family: verdana;
+            border-radius: 8px; 
+        }
+        .heading3 {
+            margin: auto;
+            left: 520x;
+
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .single-menu {
+            /* flex-basis: 400px; */
+            margin-bottom: 20px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .single-menu .img {
+            max-width: 180px;
+            /* margin-right: 20px; */
+            border: 1px solid #ddd;
+            padding: 3px;
+            transition: .5s;
+        }
+        .single-menu h4 {
+            text-transform: capitalize;
+            font-size: 22px;
+            border-bottom: 1px dashed #333;
+            margin-bottom: 5px;
+            padding-bottom: 5px; 
+        }
+        .single-menu h4 span {
+           float: right;
+           color: #ff7720;
+           font-style: italic;
+           margin-left: 100px;
+       }
+       .title2 {
+           margin: auto;
+           left: 520x;
+           width: 250px;
+           height: 57px;
+           padding: 10px;
+           background-color: black;
+           color: white;
+           text-align: center;
+           font-size: 30px;
+           font-family: verdana;
+           border-radius: 8px;
+       }
+       input {
+           width: 50%;
+           padding: 12px 20px;
+           margin: 8px 0;
+           display: inline-block;
+           border: 1px solid #ccc;
+           border-radius: 4px;
+       }
+       input[type=submit] {
+           width: 50%;
+           background-color: green;
+           color: white;
+           padding: 14px 20px;
+           margin: 8px 0;
+           border: none;
+           border-radius: 4px;
+           cursor: pointer;
+       }
+       input:hover {
+           box-shadow: 4px 6px 8px gray;
+       }
+       input[type=submit]:hover {
+           box-shadow: 4px 6px 8px rgb(1, 29, 1);
+       }
+       footer {
+           text-align: center;
+           background-color: cyan;
+           height: 200px;
+       }
+       footer h1 {
+           font-size: 45px;
+       }
+       .cont {
+           margin: 30px;
+           background-color: whitesmoke;
+           padding: 10px;
+           border-radius: 50%;
+           
+       }
+       @media screen and (min-width: 768px) {
+           .cont {
+               margin: 100px;
+           }
+       }
+       .cont:hover {
+           box-shadow: 2px 3px 4px grey;
+       }
+    </style>
+</head>
+<body>
+    <div class="container1" id="home">
+        <ul class="ul1">
+            <li class="list"><a href="#home">Home</a></li>
+            <li class="list"><a href="#menu">Menu</a></li>
+            <li class="list"><a href="#contact">Contact us</a></li>
+        </ul>
+        <h1 class="title">Delicious Modern Restaurant</h1>
+        <h2 class="heading"><a href="#book">Book a table</a></h2>
+    </div>
+    <div class="wrapper">
+        <div>
+            <h4><span>Fresh Food For Good Health</span></h4>
+        </div>
+        <div id="menu">
+            <h5 class="heading2">Our Menu</h5>
+        </div>
+        <div class="menu">
+            <div class="single-menu">
+                <img src="https://images.pexels.com/photos/4198022/pexels-photo-4198022.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="salad" width="150" height="150" style="border-radius:50%">
+                <div>
+                    <h4>Salad<span>$45</span></h4>
+                    <p><em>A salad ain’t just a meal; it’s<br>a way of life.</em></p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="https://media.istockphoto.com/photos/indian-food-thali-north-indian-thali-picture-id1253194344?s=612x612" alt="thali" width="150" height="150" style="border-radius:50%">
+                <div>
+                  <h4>Plane thali<span>$150</span></h4>   
+                  <p><em>Daal, Sabji,<br>6 Chapati, Achaar,<br>Rice.</em></p> 
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="https://media.istockphoto.com/photos/indian-hindu-veg-thali-food-platter-selective-focus-picture-id1158578874?s=612x612" alt="special thali" width="150" height="150" style="border-radius:50%">
+                <div>
+                    <h4>Special Thali<span>$200</span></h4>
+                    <p><em>Daal, sabji, Matar-Paneer,<br>Rice, Sweets, Rayta,<br>Achaar,<br>6 Chapati.</em></p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="https://images.pexels.com/photos/544961/pexels-photo-544961.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="drink" width="150" height="150" style="border-radius:50%">
+                <div>
+                    <h4>Drink</h4>
+                    <p><ul>
+                        <li><em>Mineral Water - $20</em></li>
+                        <li><em>Tea - $15</em></li>
+                        <li><em>Hot-coffee - $30</em></li>
+                        <li><em>Cold-coffee - $40</em></li>
+                    </ul></p>
+                </div>
+            </div>
+        </div>
+        <div id="book">
+            <h1 class="title2">Book A Table</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name.."><br>
+                <label for="phone">Phone:</label>
+                <input type="number" id="phone" name="phone" placeholder="Your Mobile No.."><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email.."><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date"><br>
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time"><br>
+                <label for="attendees">No of attendees:</label>
+                <input style="width:33%" type="number" id="attendees" name="attaendees" placeholder="No of attendees.."><br>
+                <input type="submit" value="Submit">
+            </form>
+         </div>
+         <footer class="center">
+             <h1 id="contact">Contact us</h1>
+             <a class="cont" href="https://www.facebook.com/profile.php?id=100004446435120https://www.facebook.com/profile.php?id=100004446435120" target="_blank">
+                <i class="fa fa-facebook"></i>
+             </a>
+             <a class="cont" href="https://www.instagram.com/sketch_with_deva/?hl=en" target="_blank">
+             <i class="fa fa-instagram"></i>
+             </a>
+             <a class="cont" href="https://www.linkedin.com/in/devansh-bharadwaj-b730221a2/" target="_blank">
+             <i class="fa fa-linkedin"></i>
+             </a>
+         </footer>
+         <div style="font-size: 20px;">&copy Copyright 2021</div>
+    </div>
+</body>
+</html>
